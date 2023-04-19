@@ -16,7 +16,7 @@ export default function Home() {
   const [articles, setArticles] = useState<Article[]>([])
   const [page, setPage] = useState(1)
   const [loading, setLoading] = useState(true)
-  const maxPage = 5
+  const maxPage = 50
 
   useEffect(() => {
     const getArticles = async () => {
